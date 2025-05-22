@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "~src/*": ["src/*"],
+      "~config/*": ["src/config/*"],
+      "~models/*": ["src/models/*"],
+      "~frontend/*": ["src/frontend/*"],
+      "~backend/*": ["src/backend/*"]
+    }
+  }
+}

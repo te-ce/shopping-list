@@ -1,0 +1,34 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "format": "prettier --write .",
+    "fe": "pnpm --filter frontend",
+    "be": "pnpm --filter backend",
+    "dev": "pnpm concurrently -n 'BE,FE' -c 'auto' 'pnpm run be dev' 'pnpm run fe dev'",
+    "start": "pnpm dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0+sha256.29bf2c5ceaea7991ee82eec15fe7162e0fad816d0c4a6b35a16c01d39274bf69",
+  "type": "module",
+  "engines": {
+    "node": ">=20.11.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "concurrently": "^9.1.2",
+    "globals": "^16.0.0",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tsx": "^4.19.3",
+    "typescript-eslint": "^8.29.1"
+  }
+}

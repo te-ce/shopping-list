@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev -r tsconfig-paths/register ./src/server.ts",
+    "format": "npm run format:eslint && npm run format:prettier",
+    "format:prettier": "npx prettier . --write",
+    "format:eslint": "npx eslint ."
+  },
+  "author": "Tom Calvin Haak",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.19",
+    "express": "^5.1.0",
+    "globals": "^16.1.0",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.10",
+    "npm": "^11.4.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mongoose": "^8.15.0",
+    "tsconfig-paths": "^4.2.0"
+  }
+}
